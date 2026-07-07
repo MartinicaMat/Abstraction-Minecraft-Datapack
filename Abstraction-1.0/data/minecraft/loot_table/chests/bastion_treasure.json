@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:sharpness": 255,
+                    "minecraft:looting": 10,
+                    "minecraft:unbreaking": 255
+                  }
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:generic.attack_damage",
+                      "amount": 500.0,
+                      "operation": "add_value",
+                      "id": "abstraction:cheat_damage",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:generic.movement_speed",
+                      "amount": 0.05,
+                      "operation": "add_value",
+                      "id": "abstraction:cheat_speed",
+                      "slot": "mainhand"
+                    }
+                  ],
+                  "fallback": true
+                },
+                "minecraft:custom_name": "{\"text\":\"Épée de la Mort qui tue\",\"color\":\"dark_purple\",\"bold\":true}",
+                "minecraft:lore": [
+                  "{\"text\":\"Une arme forgée dans le vide du Néant\",\"color\":\"gray\"}"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
